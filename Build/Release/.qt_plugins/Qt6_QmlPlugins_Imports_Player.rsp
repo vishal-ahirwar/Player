@@ -1,0 +1,9 @@
+-rootPath
+C:/Users/itsvi/Desktop/CppQt/Player
+-cmake-output
+-output-file
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/.qt_plugins/Qt6_QmlPlugins_Imports_Player.cmake
+-importPath
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release
+-importPath
+C:/Qt/6.6.0/msvc2019_64/./qml

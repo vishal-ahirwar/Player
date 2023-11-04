@@ -1,0 +1,21 @@
+# ninja log v5
+12	161	7207927267597318	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/Player_autogen/EWIEGA46WW/qrc_qml.cpp	df49b2c3d93892d4
+2	123	7207307944393320	.qt_plugins/Qt6_QmlPlugins_Imports_Player.cmake	26ee5d4543b8107a
+12	161	7207927267597318	Player_autogen/EWIEGA46WW/qrc_qml.cpp	df49b2c3d93892d4
+2	123	7207307944393320	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/.qt_plugins/Qt6_QmlPlugins_Imports_Player.cmake	26ee5d4543b8107a
+11	483	7207926643398548	Player_autogen/timestamp	5df60b1a9262d0a4
+625	2893	7207926669505382	CMakeFiles/Player.dir/imagemanager.cpp.obj	4abc14f5f1f60c68
+11	483	7207926643398548	Player_autogen/mocs_compilation.cpp	5df60b1a9262d0a4
+11	483	7207926643398548	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/Player_autogen/mocs_compilation.cpp	5df60b1a9262d0a4
+11	483	7207926643398548	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/Player_autogen/timestamp	5df60b1a9262d0a4
+161	1382	7207927279730629	CMakeFiles/Player.dir/Player_autogen/EWIEGA46WW/qrc_qml.cpp.obj	a0969e96fa9b7cb6
+628	3057	7207926671129907	CMakeFiles/Player.dir/main.cpp.obj	17c70cdf4de868ee
+636	2962	7207926670195870	CMakeFiles/Player.dir/Player_autogen/mocs_compilation.cpp.obj	f308c546d2b3ee9d
+1383	1598	7207927281957159	Player.exe	2eed46ff55c63e04
+6	371	7207935406726557	Player_autogen/timestamp	5df60b1a9262d0a4
+6	371	7207935406726557	Player_autogen/mocs_compilation.cpp	5df60b1a9262d0a4
+6	371	7207935406726557	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/Player_autogen/timestamp	5df60b1a9262d0a4
+6	371	7207935406726557	C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/Player_autogen/mocs_compilation.cpp	5df60b1a9262d0a4
+372	1410	7207935419145842	CMakeFiles/Player.dir/videomanager.cpp.obj	780e4bf15e5ebc23
+375	2315	7207935428181064	CMakeFiles/Player.dir/Player_autogen/mocs_compilation.cpp.obj	f308c546d2b3ee9d
+2316	2530	7207935430329384	Player.exe	f4d4f264c11560ae

@@ -1,0 +1,9 @@
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/Player.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/Player_qmlimportscan.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/edit_cache.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/rebuild_cache.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/list_install_components.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/install.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/install/local.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/Player_autogen_timestamp_deps.dir
+C:/Users/itsvi/Desktop/CppQt/Player/Build/Release/CMakeFiles/Player_autogen.dir
