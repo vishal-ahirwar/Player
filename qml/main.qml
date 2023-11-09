@@ -16,7 +16,7 @@ Window {
     {
 
         visible: true
-        icon.source:"qrc:/icon.ico"
+        icon.source:"qrc:/res/icon.ico"
         tooltip:
         {
             text: "Knight Player"
@@ -54,6 +54,6 @@ Window {
     {
         id:loader
         anchors.fill: parent
-        initialItem: "qrc:/Home.qml"
+        initialItem: "qrc:/qml/Pages/Home.qml"
     }
 }

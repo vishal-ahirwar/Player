@@ -3,6 +3,7 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts
 import com.player.im 1.0
 import QtQuick.Dialogs
+import "../Components"
 Page
 {
         anchors.fill: parent

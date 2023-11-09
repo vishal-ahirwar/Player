@@ -11,9 +11,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick Widgets)
-
+set(
+    SRC
+    ./src/ImageManager/imagemanager.h
+    ./src/ImageManager/imagemanager.cpp
+    ./src/VideoManager/videomanager.h
+    ./src/VideoManager/videomanager.cpp
+)
 set(PROJECT_SOURCES
-        main.cpp
+        src/main.cpp ${SRC}
         qml.qrc
 )
 
@@ -21,8 +27,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Player
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        imagemanager.h imagemanager.cpp
-        videomanager.h videomanager.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Player APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

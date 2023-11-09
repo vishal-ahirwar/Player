@@ -1,13 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>Home.qml</file>
-        <file>icon.ico</file>
-        <file>ShowImage.qml</file>
-        <file>ShowVideo.qml</file>
-        <file>ss.png</file>
-        <file>TopBar.qml</file>
-        <file>CustomProgressBar.qml</file>
-        <file>CustomButton.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/Pages/Home.qml</file>
+        <file>qml/Pages/ShowImage.qml</file>
+        <file>qml/Pages/ShowVideo.qml</file>
+        <file>qml/Components/CustomButton.qml</file>
+        <file>qml/Components/CustomProgressBar.qml</file>
+        <file>qml/Components/TopBar.qml</file>
+        <file>res/icon.ico</file>
     </qresource>
 </RCC>

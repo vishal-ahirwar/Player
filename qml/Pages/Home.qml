@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "."
+import "../Components"
 Page
 {
 
@@ -39,7 +39,7 @@ Page
                 onClicked:
                 {
 
-                    loader.push("qrc:/ShowImage.qml")
+                    loader.push("qrc:/qml/Pages/ShowImage.qml")
                 }
                 text: "Show Image"
 
@@ -53,7 +53,7 @@ Page
                 onClicked:
                 {
 
-                    loader.push("qrc:/ShowVideo.qml")
+                    loader.push("qrc:/qml/Pages/ShowVideo.qml")
                 }
                 text: "Show Video"
                 width: 90
