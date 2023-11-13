@@ -1,45 +1,98 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts
+import com.player.im 1.0
+import QtQuick.Dialogs
 import "../Components"
 Page
 {
-    anchors.fill: parent
+        anchors.fill: parent
 
     Rectangle
     {
+        Connections
+        {
+            target: VideoThread
+             onUpdateFrame:
+                imageManager.setRawFrame(frame)
+
+        }
+
+        anchors.centerIn: parent
+        color: "black"
+        anchors.fill: parent
+
+        Image {
+            id: picture
+            anchors.fill: parent
+            fillMode: Image.PreserveAspectFit
+
+        }
+        ImageManager
+        {
+            id:imageManager
+            anchors.fill: parent
+            visible: false
+
+        }
         TopBar
         {
-            title: Text
-            {
-                visible:false
-                text:""
-            }
+            id:bottomBar
         }
 
-        anchors.fill: parent
-        color: "darkblue"
-
-        Text {
-            id: txt
-            text: qsTr("Show Video")
-            anchors.horizontalCenter: parent
-            anchors.centerIn: parent
-            color: "white"
-        }
-
-        CustomButton
+        Row
         {
-            width: 90
-            height: 25
-            text: "Back"
-            font.pixelSize: 14
-            anchors.top: txt.bottom
-            anchors.topMargin: 90
+            anchors.top: bottomBar.top
             anchors.horizontalCenter: parent.horizontalCenter
-            onClicked:
+            anchors.topMargin: -5
+            Component.onCompleted:
             {
-                loader.pop();
+                imageManager.setWidthHeight(window.width,window.height)
             }
+
+            spacing: 10
+            padding: 15
+            CustomButton
+            {
+                width: 90
+                height: 25
+                text: "Back"
+                font.pixelSize: 14
+                onClicked:
+                {
+                    loader.pop();
+                }
+            }
+
+            CustomButton
+            {
+                width: 90
+                height: 25
+                text: "Open Video"
+                font.pixelSize: 14
+                onClicked:
+                {
+                    videoDialog.open()
+                }
+            }
+
+            FileDialog
+            {
+                id:videoDialog
+                title: "select Video"
+
+                onAccepted: {
+                            print(videoDialog.selectedFile.toString())
+                       VideoThread.RunCapture(videoDialog.selectedFile.toString())
+
+                  picture.visible=false
+                    imageManager.visible=true
+
+                }
+            }
+
         }
+
     }
 }
+

@@ -7,7 +7,7 @@ Rectangle
     property Text title
     width: parent.width-40
     height: 45
-    color: Qt.rgba(1,1,1,0.2)
+    color: Qt.rgba(1,1,1,0.1)
     anchors.bottom: parent.bottom
     anchors.bottomMargin: 10
     radius: 16

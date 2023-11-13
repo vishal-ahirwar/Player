@@ -17,6 +17,9 @@ set(
     ./src/ImageManager/imagemanager.cpp
     ./src/VideoManager/videomanager.h
     ./src/VideoManager/videomanager.cpp
+    ./src/ThreadManager/threadmanager.h
+    ./src/ThreadManager/threadmanager.cpp
+
 )
 set(PROJECT_SOURCES
         src/main.cpp ${SRC}
@@ -27,6 +30,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Player
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Player APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -50,7 +54,12 @@ include_directories(C:\\Users\\itsvi\\vcpkg\\installed\\x64-windows\\include)
 set(OPENCV_PATH C:\\Users\\itsvi\\vcpkg\\installed\\x64-windows\\lib)
 
 target_link_libraries(Player
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick ${OPENCV_PATH}//opencv_imgproc4.lib ${OPENCV_PATH}//opencv_core4.lib ${OPENCV_PATH}//opencv_highgui4.lib ${OPENCV_PATH}//opencv_imgcodecs4.lib)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick
+  ${OPENCV_PATH}//opencv_imgproc4.lib
+  ${OPENCV_PATH}//opencv_core4.lib
+  ${OPENCV_PATH}//opencv_highgui4.lib
+  ${OPENCV_PATH}//opencv_imgcodecs4.lib
+  ${OPENCV_PATH}//opencv_videoio4.lib)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

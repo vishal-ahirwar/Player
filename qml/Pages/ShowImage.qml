@@ -15,12 +15,12 @@ Page
         color: "black"
         anchors.fill: parent
 
-//        Image {
-//            id: picture
-//            anchors.fill: parent
-//            fillMode: Image.PreserveAspectFit
+        Image {
+            id: picture
+            anchors.fill: parent
+            fillMode: Image.PreserveAspectFit
 
-//        }
+        }
         ImageManager
         {
             id:imageManager

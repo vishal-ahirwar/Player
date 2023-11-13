@@ -1,6 +1,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include"ImageManager/imagemanager.h"
+#include<QQmlContext>
+#include<QQmlComponent>
+#include"./ThreadManager/threadmanager.h"
 
 int main(int argc, char *argv[])
 {
@@ -8,9 +11,11 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
     QGuiApplication app(argc, argv);
-
+    ThreadManager videoThread;
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("VideoThread",&videoThread);
     qmlRegisterType<ImageManager>("com.player.im",1,0,"ImageManager");
+    qRegisterMetaType<cv::Mat>("Mat");
     const QUrl url(QStringLiteral("qrc:/qml/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
         &app, [url](QObject *obj, const QUrl &objUrl) {

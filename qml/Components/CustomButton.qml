@@ -21,8 +21,8 @@ Button {
         radius: 10
         // add a gradient effect to the background
         gradient: Gradient {
-            GradientStop { position: 0.0; color: "#17a81a" }
-            GradientStop { position: 1.0; color: "#21be2b" }
+            GradientStop { position: 0.0; color:Qt.rgba(1,1,1,0.2) }
+            GradientStop { position: 1.0; color:Qt.rgba(1,1,1,0.2)}
         }
     }
 }
